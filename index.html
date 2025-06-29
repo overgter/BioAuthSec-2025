@@ -11,34 +11,30 @@
             padding: 0;
             background-color: #f9f9f9;
             color: #333;
-            display: flex;
         }
 
-        .sidebar {
-            width: 220px;
+        .topnav {
             background-color: #003366;
-            padding-top: 20px;
-            height: 100vh;
-            position: fixed;
-            margin-left: 220px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
         }
 
-        .sidebar a {
-            display: block;
+        .topnav a {
             color: #fff;
-            padding: 12px 20px;
+            padding: 14px 20px;
             text-decoration: none;
+            display: block;
+            text-align: center;
         }
 
-        .sidebar a:hover {
+        .topnav a:hover {
             background-color: #005599;
         }
 
         .content-wrapper {
-            flex: 1;
             display: flex;
             justify-content: center;
-            margin-left: 220px;
         }
 
         .container {
@@ -53,7 +49,7 @@
         .header-title {
             text-align: center;
             font-size: 36px;
-            font-weight: bold; /* 加粗 */
+            font-weight: bold;
             letter-spacing: 1px;
             margin-top: 20px;
             margin-bottom: 10px;
@@ -62,7 +58,7 @@
         .header-subtitle {
             text-align: center;
             font-size: 20px;
-            font-weight: bold; /* 加粗 */
+            font-weight: bold;
             color: #5c4b4b;
             margin-bottom: 5px;
         }
@@ -70,17 +66,17 @@
         .header-location {
             text-align: center;
             font-size: 18px;
-            font-weight: bold; /* 加粗 */
+            font-weight: bold;
             color: #5c4b4b;
             margin-bottom: 20px;
         }
 
         .header-box {
-            border: 2px solid #003366;   /* 边框颜色，可自行调整 */
-            padding: 20px;               /* 内边距 */
-            margin-bottom: 20px;         /* 下方间距 */
-            background-color: #ffffff;   /* 背景颜色，可自行调整 */
-            border-radius: 8px;          /* 圆角，可选 */
+            border: 2px solid #003366;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
             text-align: center;
         }
 
@@ -111,7 +107,7 @@
 </head>
 <body>
 
-    <div class="sidebar">
+    <div class="topnav">
         <a href="#abstract">Abstract</a>
         <a href="#topics">Topics</a>
         <a href="#dates">Important Dates</a>
@@ -122,17 +118,11 @@
 
     <div class="content-wrapper">
         <div class="container">
-            <!-- 
-            <div class="header-title">Biometric-based Authentication and Security Workshop</div>
-            <div class="header-title">(BioAuthSec 2025)</div>
-            <div class="header-subtitle">December 8, 2025 — Melbourne, Australia</div>
-            <div class="header-location">co-located with AsiaCrypto 2025</div>
-            -->
             <div class="header-box">
-            <div class="header-title">Biometric-based Authentication and Security Workshop</div>
-            <div class="header-title">(BioAuthSec 2025)</div>
-            <div class="header-subtitle">December 8, 2025 — Melbourne, Australia</div>
-            <div class="header-location">co-located with AsiaCrypto 2025</div>
+                <div class="header-title">Biometric-based Authentication and Security Workshop</div>
+                <div class="header-title">(BioAuthSec 2025)</div>
+                <div class="header-subtitle">December 8, 2025 — Melbourne, Australia</div>
+                <div class="header-location">co-located with AsiaCrypto 2025</div>
             </div>
 
             <h2 id="abstract">Abstract</h2>
@@ -161,15 +151,8 @@
                 <li>Notification of Acceptance: September 30, 2025</li>
                 <li>Final Manuscript Due: October 15, 2025</li>
             </ul>
-<!-- 
+
             <h2 id="organizers">Organizers and Contact</h2>
-            <ul>
-                <li>Dr Shabnam Kasra Kermanshahi, University of New South Wales, Australia (<a href="mailto:s.kasra_kermanshahi@unsw.edu.au">s.kasra_kermanshahi@unsw.edu.au</a>)</li>
-                <li>Dr Wencheng Yang, University of Southern Queensland, Australia (<a href="mailto:wencheng.yang@unisq.edu.au">wencheng.yang@unisq.edu.au</a>)</li>
-                <li>Prof Jiankun Hu, University of New South Wales, Australia (<a href="mailto:jiankun.hu@unsw.edu.au">jiankun.hu@unsw.edu.au</a>)</li>
-            </ul>
- -->
-           <h2 id="organizers">Organizers and Contact</h2>
             <ul style="list-style-type: none; padding: 0; display: flex; gap: 20px;">
                 <li style="text-align: center; flex: 1;">
                     <img src="Shabnam Kasra.jpg" alt="Shabnam" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;">
@@ -190,7 +173,6 @@
                     </p>
                 </li>
             </ul>
-
 
             <h2 id="committee">Program Committee (Tentative)</h2>
             <ul>
