@@ -11,38 +11,36 @@
             padding: 0;
             background-color: #f9f9f9;
             color: #333;
+            display: flex;
         }
 
-        .navbar {
+        .sidebar {
+            width: 220px;
             background-color: #003366;
-            overflow: hidden;
+            padding-top: 20px;
+            height: 100vh;
+            position: fixed;
         }
 
-        .navbar a {
-            float: left;
+        .sidebar a {
             display: block;
             color: #fff;
-            text-align: center;
-            padding: 14px 20px;
+            padding: 12px 20px;
             text-decoration: none;
         }
 
-        .navbar a:hover {
+        .sidebar a:hover {
             background-color: #005599;
         }
 
-        .header-image {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-        }
-
         .container {
-            max-width: 1000px;
-            margin: 20px auto;
+            margin-left: 240px;
+            max-width: 900px;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
         h1 {
@@ -86,7 +84,7 @@
 </head>
 <body>
 
-    <div class="navbar">
+    <div class="sidebar">
         <a href="#abstract">Abstract</a>
         <a href="#topics">Topics</a>
         <a href="#dates">Important Dates</a>
@@ -94,8 +92,6 @@
         <a href="#committee">Committee</a>
         <a href="#submission">Submission</a>
     </div>
-
-    <img src="https://via.placeholder.com/1200x300.png?text=BioAuthSec+2025+Workshop" alt="Workshop Banner" class="header-image">
 
     <div class="container">
         <h1>Biometric-based Authentication and Security Workshop (BioAuthSec 2025)</h1>
@@ -156,8 +152,5 @@
         <p>We look forward to your participation!</p>
     </div>
 
-    <footer>
-        © 2025 BioAuthSec Workshop. All rights reserved.
-    </footer>
 </body>
 </html>
