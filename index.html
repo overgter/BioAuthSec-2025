@@ -18,6 +18,10 @@
             overflow: hidden;
             display: flex;
             justify-content: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
         }
 
         .topnav a {
@@ -35,6 +39,7 @@
         .content-wrapper {
             display: flex;
             justify-content: center;
+            margin-top: 60px; /* 给内容加上顶部空隙，防止被菜单挡住 */
         }
 
         .container {
